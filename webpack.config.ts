@@ -12,6 +12,7 @@ interface EnvVariables {
 
 export default (env: EnvVariables) => {
     const isDevMode = env.mode === 'development';
+    console.log(isDevMode, env.mode)
 
     const config = {
         mode: env.mode ?? 'development',
