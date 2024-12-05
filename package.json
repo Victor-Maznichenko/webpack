@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "webpack serve",
     "build:prod": "webpack --env --goal=local --mode=production",
     "build:dev": "webpack --env --goal=local --mode=development"
   },
