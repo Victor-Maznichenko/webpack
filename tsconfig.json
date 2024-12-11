@@ -8,6 +8,9 @@
         "allowJs": true,
         "moduleResolution": "node",
         "esModuleInterop": true,
+        "paths": {
+            "@/*": ["./src/*"]
+        }
     },
     "ts-node": {
         "compilerOptions": {

@@ -4,7 +4,9 @@ export const devServer = ({ isDevMode, port }: Webpack.ModuleOptions) => {
    if (!isDevMode) return;
 
    return {
-      port: port ?? 3000,
+      hot: true,
       open: true,
+      port: port ?? 3000,
+      historyApiFallback: true,
    };
 };
